@@ -2,9 +2,9 @@
 
 pip install -r config/requirements.txt
 
-command ---- python apiAlerts.py -h
+command ---- (python apiAlerts.py -h)
 provides the list of optional arguments
-Sample output::
+(Sample output)::
 (venv) preethamuppala@preethams-mbp cryptoalerter % python apiAlerts.py -h
 2021-10-31 18:16:52,313 - AlertingTool - INFO - Parsing the arguments
 usage: apiAlerts.py [-h] [-c CURRENCY] [-d DEVIATION] [-t TYPE]
@@ -20,9 +20,9 @@ optional arguments:
 Runs checks on API
 *************************************************************************************
 
-command ---- python apiAlerts.py -t pricedev -c btcusd
+command ---- (python apiAlerts.py -t pricedev -c btcusd)
 price deviation for selected ticker
-sample output ::
+(sample output) ::
 (venv) preethamuppala@preethams-mbp cryptoalerter % python apiAlerts.py -t pricedev -c btcusd
 2021-10-31 18:18:28,917 - AlertingTool - INFO - Parsing the arguments
 2021-10-31 18:18:28,918 - AlertingTool - INFO - Running check: pricedev
@@ -40,8 +40,8 @@ sample output ::
 2021-10-31 18:18:29,668 - AlertingTool - INFO - Price diff: 153.815599483366
 2021-10-31 18:18:29,669 - AlertingTool - ERROR - ** Price deviation
 *************************************************************************************
-command ---- python apiAlerts.py -t pricedev
+command ---- (python apiAlerts.py -t pricedev)
 gives price dev for all the tickers
 
-command ---- python apiAlerts.py
+command ---- (python apiAlerts.py)
 run all the three checks for all the tickers
